@@ -2,4 +2,4 @@ apiVersion: v2
 name: true-printer
 description: Share your printer over AirPrint
 type: application
-version: "1.0"
+version: 1.0.0
