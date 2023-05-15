@@ -1,0 +1,26 @@
+groups:
+  - name: "TruePrinter Environment Variables"
+    description: "Set the environment that will be visible to the container"
+
+
+questions:
+  - variable: environmentVariables
+    label: "Environment Variables"
+    group: "TruePrinter Environment Variables"
+    schema:
+      type: list
+      default: []
+      items:
+        - variable: environmentVariable
+          label: "Environment Variable"
+          schema:
+            type: dict
+            attrs:
+              - variable: name
+                label: "Name"
+                schema:
+                  type: string
+              - variable: value
+                label: "Value"
+                schema:
+                  type: string
